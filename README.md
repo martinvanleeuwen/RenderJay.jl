@@ -6,9 +6,10 @@ in Julia it can profit from Julia's distributed computing capabilities, enabling
 
 RenderJay can be installed as follows from the Julia REPL:
 
+```
 using Pkg
 Pkg.add("RenderJay")
-
+```
 
 # Usage
 
