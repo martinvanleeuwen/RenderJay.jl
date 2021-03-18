@@ -1,7 +1,7 @@
 # RenderJay.jl
 a Julia-based path tracer
 
-RenderJay is a Julia-based path tracer that was intended for operation on large compute clusters, with applications in ecology and remote sensing where scenes are characterized by very high polygon counts and lots of detail, but not so much for applications in computer graphics. For example, RenderJay uses no bump maps or textures; everything is down to geometry and bidirectional reflectance  (transmittance) distribution functions (BRDFs, BTDFs). Being written 
+RenderJay is a Julia-based path tracer that was intended for operation on large compute clusters, with applications in ecology and remote sensing where scenes are characterized by very high polygon counts, lots of detail, and light spectra broken down into hundreds of wavebands, but not so much for applications in computer graphics. For example, RenderJay uses no bump maps or textures; everything is down to geometry and bidirectional reflectance  (transmittance) distribution functions (BRDFs, BTDFs). Being written 
 in Julia it can profit from Julia's distributed computing capabilities, enabling processing of large workloads across multiple servers.
 
 RenderJay can be installed as follows from the Julia REPL:
