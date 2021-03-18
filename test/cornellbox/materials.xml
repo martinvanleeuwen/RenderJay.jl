@@ -1,0 +1,55 @@
+<materials>
+	<material>
+		<name>whitewall</name>
+		<shader>lambertian_path_shader</shader>
+		<args>
+			<rho>1.0, 1.0, 1.0</rho>
+		</args>
+	</material>
+	<material>
+		<name>redwall</name>
+		<shader>lambertian_path_shader</shader>
+		<args>
+			<rho>1.0, 0.0, 0.0</rho>
+		</args>
+	</material>
+	<material>
+		<name>greenwall</name>
+		<shader>lambertian_path_shader</shader>
+		<args>
+			<rho>0.0, 1.0, 0.0</rho>
+		</args>
+	</material>
+	<material>
+		<name>whitebox1</name>
+		<shader>lambertian_path_shader</shader>
+		<args>
+			<rho>1.0, 1.0, 1.0</rho>
+		</args>
+	</material>
+	<material>
+		<name>whitebox2</name>
+		<shader>lambertian_path_shader</shader>
+		<args>
+			<rho>1.0, 1.0, 1.0</rho>
+		</args>
+	</material>
+	<material>
+		<name>light</name>
+		<shader>lightsource_path_shader</shader>
+		<args>
+			<emission>1.0, 1.0, 1.0</emission>
+		</args>
+	</material>
+	<material>
+		<name>rpvwall</name>
+		<shader>rpv_path_shader</shader>
+		<args>
+			<rho_zero>0.874154,0.852792,0.849658</rho_zero>
+			<k>1.009020,1.002930,1.003800</k>
+			<captheta>0.056182,0.056246,0.058770</captheta>
+			<rho_c>0.800455,0.749030,0.733845</rho_c>
+		</args>
+	</material>
+</materials>
+

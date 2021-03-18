@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scene>
+	<camera>
+		<eyeX>5.00</eyeX>
+		<eyeY>5.00</eyeY>
+		<eyeZ>15.0</eyeZ>
+		<lookX>5.0</lookX>
+		<lookY>5.0</lookY>
+		<lookZ>0.0</lookZ>
+		<fov>0.75</fov>
+		<xResolution>500</xResolution>
+		<yResolution>500</yResolution>
+		<nBands>3</nBands>
+		<rppx>5000</rppx>
+		<nBounces>8</nBounces>
+	</camera>
+	<sky src="./power32_ambient0_diffuse10.csv"></sky>
+	<item geometry="mesh" src="./terrain/">
+		<shader>
+			<name>whitewall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<hook>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>0.0</z>
+			<beta>0.0</beta>
+			<gamma>0.0</gamma>
+		</hook>		
+	</item>
+	<item geometry="mesh" src="./cornellbox/">
+		<shader>
+			<name>whitewall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>redwall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 0.0, 0.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>greenwall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>0.0, 1.0, 0.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>whitebox1</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>whitebox2</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>light</name>
+			<function>lightsource_path_shader</function>
+			<args>
+				<emission>1.0, 1.0, 1.0</emission>
+			</args>
+		</shader>
+		<shader>
+			<name>rpvwall</name>
+			<function>rpv_path_shader</function>
+			<args>
+				<rho_zero>0.874154,0.852792,0.849658</rho_zero>
+				<k>1.009020,1.002930,1.003800</k>
+				<captheta>0.056182,0.056246,0.058770</captheta>
+				<rho_c>0.800455,0.749030,0.733845</rho_c>
+			</args>
+		</shader>
+		<hook>
+			<x>7.0</x>
+			<y>6.0</y>
+			<z>2.0</z>
+			<beta>0.4</beta>
+			<gamma>0.6</gamma>
+		</hook>
+	</item>
+	<item geometry="mesh" src="./cornellbox/">
+		<shader>
+			<name>whitewall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>purplewall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>0.5, 0.0, 0.5</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>yellowwall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 0.84, 0.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>whitebox1</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>whitebox2</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>light</name>
+			<function>lightsource_path_shader</function>
+			<args>
+				<emission>1.0, 1.0, 1.0</emission>
+			</args>
+		</shader>
+		<shader>
+			<name>rpvwall</name>
+			<function>rpv_path_shader</function>
+			<args>
+				<rho_zero>0.874154,0.852792,0.849658</rho_zero>
+				<k>1.009020,1.002930,1.003800</k>
+				<captheta>0.056182,0.056246,0.058770</captheta>
+				<rho_c>0.800455,0.749030,0.733845</rho_c>
+			</args>
+		</shader>
+		<hook>
+			<x>7.0</x>
+			<y>2.0</y>
+			<z>2.0</z>
+			<beta>0.3</beta>
+			<gamma>0.8</gamma>
+		</hook>
+	</item>
+	<item geometry="mesh" src="./cornellbox/">
+		<shader>
+			<name>whitewall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>orangewall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 0.5, 0.25</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>bluewall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>0.0, 0.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>whitebox1</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>whitebox2</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>light</name>
+			<function>lightsource_path_shader</function>
+			<args>
+				<emission>1.0, 1.0, 1.0</emission>
+			</args>
+		</shader>
+		<shader>
+			<name>rpvwall</name>
+			<function>rpv_path_shader</function>
+			<args>
+				<rho_zero>0.874154,0.852792,0.849658</rho_zero>
+				<k>1.009020,1.002930,1.003800</k>
+				<captheta>0.056182,0.056246,0.058770</captheta>
+				<rho_c>0.800455,0.749030,0.733845</rho_c>
+			</args>
+		</shader>
+		<hook>
+			<x>3.0</x>
+			<y>6.0</y>
+			<z>2.0</z>
+			<beta>0.57</beta>
+			<gamma>0.7</gamma>
+		</hook>
+	</item>
+	<item geometry="mesh" src="./cornellbox/">
+		<shader>
+			<name>whitewall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>pinkwall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 0.75, 0.85</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>brownwall</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>0.65, 0.16, 0.16</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>whitebox1</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>whitebox2</name>
+			<function>lambertian_path_shader</function>
+			<args>
+				<rho>1.0, 1.0, 1.0</rho>
+			</args>
+		</shader>
+		<shader>
+			<name>light</name>
+			<function>lightsource_path_shader</function>
+			<args>
+				<emission>1.0, 1.0, 1.0</emission>
+			</args>
+		</shader>
+		<shader>
+			<name>rpvwall</name>
+			<function>rpv_path_shader</function>
+			<args>
+				<rho_zero>0.874154,0.852792,0.849658</rho_zero>
+				<k>1.009020,1.002930,1.003800</k>
+				<captheta>0.056182,0.056246,0.058770</captheta>
+				<rho_c>0.800455,0.749030,0.733845</rho_c>
+			</args>
+		</shader>
+		<hook>
+			<x>3.0</x>
+			<y>2.0</y>
+			<z>2.0</z>
+			<beta>0.0</beta>
+			<gamma>1.0</gamma>
+		</hook>
+	</item>
+</scene>
