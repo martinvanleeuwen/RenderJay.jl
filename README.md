@@ -19,8 +19,6 @@ The Wytham Woods image is an example rendering that was derived from data that w
 https://rami-benchmark.jrc.ec.europa.eu/_www/phase_descr.php?strPhase=RAMI5
 (feel free to contact Martin van Leeuwen for conversion scripts to Jay format)
 
-If you are on a laptop or you have few logical cores, please mind the addprocs() line below and set the number to something comfortable, e.g., the number of logical cores that are available.
-
 
 ![image Wytham Woods](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/wytham.png)
 
@@ -31,7 +29,7 @@ Rendering a 512x512px image of the below Cornell boxes scene took 00:34:04 (HH:M
 
 # Example code
 
-Below is an example that renders a set of four Cornell boxes with different colours floating just above a flat surface.
+Below is an example that renders a set of four Cornell boxes with different colours floating just above a flat surface. If you are on a laptop or you have few logical cores, please mind the addprocs() line and set the number to something comfortable, e.g., the number of logical cores that are available.
 
 ```
 using Distributed
