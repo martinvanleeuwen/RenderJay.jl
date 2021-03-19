@@ -1,7 +1,7 @@
 # RenderJay.jl
 a Julia-based path tracer
 
-RenderJay is a Julia-based path tracer that was intended for operation on large compute clusters, with applications in ecology and remote sensing where scenes are characterized by very high polygon counts, lots of detail, and light spectra may be broken down into hundreds of wavebands (imaging spectroscopy), but not so much for applications in computer graphics. For example, RenderJay uses no bump maps or textures; everything is down to geometry and bidirectional reflectance  (transmittance) distribution functions (BRDFs, BTDFs). Being written in Julia it can profit from Julia's distributed computing capabilities, enabling processing of large workloads across multiple servers.
+RenderJay is a Julia-based path tracer that is intended for operation on large compute clusters, with applications in ecology and remote sensing where scenes are characterized by very high polygon counts, lots of detail, and light spectra may be broken down into hundreds of wavebands (imaging spectroscopy), but not so much for applications in computer graphics. For example, RenderJay uses no bump maps or textures; everything is down to geometric shaped (i.e., spheres, cylinders, cones, disks and triangle meshes) and bidirectional reflectance (transmittance) distribution functions (BRDFs, BTDFs). Being written in Julia it can profit from Julia's distributed computing capabilities, enabling processing of large workloads across multiple servers.
 
 RenderJay can be installed as follows from the Julia REPL:
 
@@ -12,12 +12,12 @@ Pkg.add("RenderJay")
 
 # Usage
 
-The following is an example code for rendering. It will produce a top-down view of four Cornell boxes in different colours, floating above a gray flat surface. Produced renderings can be found in img/ The surface geometry, downwelling irradiance, as well as the scene specification (XML) file with the shaders can all be found under test/
+The following is an example code for rendering. It will produce a top-down view of four Cornell boxes in different colours, floating above a gray flat surface. Already produced renderings can be found in the img/ folder. The surface geometry, downwelling irradiance, as well as the scene specification (XML) file with the shaders can all be found in the test/ folder.
 
 The Wytham Woods image is an example rendering that was derived from data that was provided through the RAdiative transfer Model Intercomparison (RAMI) phase-V, that can be found here:
 
 https://rami-benchmark.jrc.ec.europa.eu/_www/phase_descr.php?strPhase=RAMI5
-(feel free to contact author for conversion scripts to Jay format)
+(feel free to contact Martin van Leeuwen for conversion scripts to Jay format)
 
 If you are on a laptop or you have few logical cores, please mind the addprocs() line below and set the number to something comfortable, e.g., the number of logical cores that are available.
 
