@@ -83,3 +83,8 @@ _, imwb = weibull(imscl, a, b)
 im2 = colorview(RGB, imwb)
 save("/tmp/test_little_cornell_boxes_wb.tif", im2')
 ```
+
+Et voila! You should be seeing something like this.
+
+![image Cornell boxes](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/test_little_cornell_boxes_wb_crop.png)
+
