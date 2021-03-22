@@ -22,6 +22,12 @@ https://rami-benchmark.jrc.ec.europa.eu/_www/phase_descr.php?strPhase=RAMI5
 
 ![image Wytham Woods](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/wytham.png)
 
+
+# Plant models
+
+A good place to look for plant models is online at various 3D model warehouses. The Wavefront OBJ file format is very close to what RenderJay uses and a simple script in your favorite language can be used to produce the separate vertex and mesh connectivity files. To see how they should look, check out the assets you find under the test/ folder in this repository. Don't worry about the BVH file (it stands for Bounding Volume Hierarchy and it is for spatial indexing). These are produced the first time you use a new asset. If you ever make changes to an existing asset, do remove the BVH file that is associated with that asset. This will automatically create a new BVH based on the changes you applied to that asset. Besides browsing any 3D warehouses, you can also try out e.g. Arbaro - a tree generator for PovRay that was developed by Weber and Penn 1995. It can be found here: http://arbaro.sourceforge.net/
+
+
 # Performance indication
 
 Rendering a 512x512px image of the below Cornell boxes scene took 00:34:04 (HH:MM:SS) on the Dell T7910 (DUAL E5-2630V3) using 30 workers and it took 3:39:20 (HH:MM:SS) on a Lenovo Edge 15 laptop (i7-4510U) with only 3 workers...
