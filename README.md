@@ -30,7 +30,7 @@ A good place to look for plant models is online at various 3D model warehouses. 
 
 # Performance indication
 
-Rendering a 512x512px image of the below Cornell boxes scene took 00:34:04 (HH:MM:SS) on the Dell T7910 (DUAL E5-2630V3) using 30 workers and it took 3:39:20 on a Lenovo Edge 15 laptop (i7-4510U) with only 3 workers. For some very simple scenes (not shown) up to a million rays per second were processed using 30 workers.
+Rendering a 512x512px image of the below Cornell boxes scene took 00:34:04 (HH:MM:SS) on the Dell T7910 (DUAL E5-2630V3) using 30 workers and it took 3:39:20 on a Lenovo Edge 15 laptop (i7-4510U) with only 3 workers. For some very simple scenes with only a few cylinders on a flat surface (not shown) up to a million rays per second were processed using 30 workers.
 
 
 # Example code
