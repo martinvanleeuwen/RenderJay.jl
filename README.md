@@ -50,7 +50,7 @@ Here is an image showing the downwelling irradiance map that was used for these 
 
 And here is an overhead view of the Ofenpass scene. You can clearly see that there is a discontinuity along the bearing of the irradiance map -- which also indicates how the map drapes around the visible sky!
 
-![image overhead view](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/Ofenpass_overhead_view_v2.png)
+![image overhead view](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/Ofenpass_overhead_view_v3.png)
 
 
 
