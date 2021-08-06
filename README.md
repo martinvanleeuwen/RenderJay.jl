@@ -46,7 +46,7 @@ As part of the RAdiative transfer Model Intercomparison excersize phase 5 we hav
 
 Here is a jpeg showing the downwelling irradiance map:
 
-![image irradiance map](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/power32_ambient0_diffuse10.png)
+![image irradiance map](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/power32_ambient0_diffuse10.jpg)
 
 
 
