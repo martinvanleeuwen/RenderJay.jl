@@ -42,7 +42,7 @@ See this paper (https://doi.org/10.1016/j.rse.2021.112405) for an idea of the ki
 
 As part of the RAdiative transfer Model Intercomparison excersize phase 5 we have prepared RenderJay scene files for the various test cases involved, including abstract scenes, fully parameterized canopies, and (semi-)empirical forest canopies. Here is a selection of nadir renderings including some of these scenes. No white-balancing has been applied yet, which causes the Wytham woods scene to appear somewhat greenish.
 
-
+![image RAMI-5](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/rami5_test.png)
 
 
 # Example code
