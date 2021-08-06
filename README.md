@@ -44,7 +44,7 @@ As part of the RAdiative transfer Model Intercomparison excersize phase 5 we hav
 
 ![image RAMI-5](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/rami5_test.png)
 
-Here is an image showing the downwelling irradiance map, with bearing along the horizontal axis and zenith along the vertical:
+Here is an image showing the downwelling irradiance map that was used for these renderings, with bearing along the horizontal axis and zenith along the vertical:
 
 ![image irradiance map](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/power32_ambient0_diffuse10.png)
 
