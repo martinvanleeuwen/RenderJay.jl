@@ -40,7 +40,7 @@ See this paper (https://doi.org/10.1016/j.rse.2021.112405) for an idea of the ki
 
 # RAMI-5
 
-As part of the RAdiative transfer Model Intercomparison excersize phase 5 we have prepared RenderJay scene files for the various test cases involved, including abstract scenes, fully parameterized canopies, and (semi-)empirical forest canopies. Here is a selection of nadir renderings including some of these scenes. No white-balancing has been applied yet, which causes the Wytham woods scene to appear somewhat greenish. The irradiance conditions for these example renderings were set to a 10% diffuse sky with a little bit of a watery sun.
+As part of the RAdiative transfer Model Intercomparison excersize (phase 5), we have prepared RenderJay scene files for the various test cases involved, including abstract scenes, fully parameterized canopies, and (semi-)empirical forest canopies. The illustrations below show raw renderings and no white-balancing has been applied yet, which causes the Wytham Woods scene to appear rather greenish. The irradiance conditions for these example renderings were set to a 10% diffuse sky with a watery sun.
 
 ![image RAMI-5](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/rami5_test.png)
 
@@ -48,7 +48,7 @@ Here is an image showing the downwelling irradiance map that was used for these 
 
 ![image irradiance map](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/power32_ambient0_diffuse10.png)
 
-And here is an overhead view of the Ofenpass scene. You can clearly see that there is a discontinuity along the bearing of the irradiance map -- which, for the purpose of illustration, indicates how the irradiance map drapes around the visible sky!
+And here is an overhead view of the Ofenpass scene. You can clearly see that there is a discontinuity along the bearing of the irradiance map -- which, for the purpose of demonstration, indicates how the irradiance map drapes around the visible sky!
 
 ![image overhead view](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/Ofenpass_overhead_view_v3.png)
 
