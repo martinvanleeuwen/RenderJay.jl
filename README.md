@@ -38,6 +38,13 @@ Rendering a 512x512px image of the below Cornell boxes scene took 00:34:04 (HH:M
 See this paper (https://doi.org/10.1016/j.rse.2021.112405) for an idea of the kind of cool things that you can do with this module.
 
 
+# RAMI-5
+
+As part of the RAdiative transfer Model Intercomparison excersize phase 5 we have prepared RenderJay scene files for the various test cases involved, including abstract scenes, fully parameterized canopies, and (semi-)empirical forest canopies. Here is a selection of nadir renderings including some of these scenes. No white-balancing has been applied yet, which causes the Wytham woods scene to appear somewhat greenish.
+
+
+
+
 # Example code
 
 Below is an example that renders a set of four Cornell boxes with different colours floating just above a flat surface. If you are on a laptop or you have few logical cores, please mind the addprocs() line and set the number to something comfortable, e.g., the number of logical cores that are available.
