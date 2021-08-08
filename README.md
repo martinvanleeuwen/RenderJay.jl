@@ -47,9 +47,11 @@ Here is an image showing the downwelling irradiance map that was used for these 
 
 ![image irradiance map](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/power32_ambient0_diffuse10.png)
 
-And here is an overhead view of the Ofenpass scene. You can clearly see that there is a discontinuity along the bearing of the irradiance map -- which, for the purpose of demonstration, indicates how the irradiance map drapes around the visible sky!
+And here are two overhead views of the Jarvsilja Pinestand (summer) and Ofenpass (winter) scenes. You can clearly see that there is a discontinuity along the bearing of the irradiance map -- which, for the purpose of demonstration, has the benefit that it shows how the irradiance map drapes around the visible sky.
 
-![image overhead view](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/Ofenpass_overhead_view_v3.png)
+![image HET07_JPS_SUM fisheye](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/HET07_JPS_SUM_fisheye.png)
+
+![image HET08_OPS_WIN fisheye](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/HET08_OPS_WIN_fisheye.png)
 
 
 
