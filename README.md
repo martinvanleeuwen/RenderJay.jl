@@ -51,6 +51,8 @@ And here are two overhead views of the Jarvsilja Pinestand (summer) and Ofenpass
 
 ![image two fisheye shots](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/fisheyes.png)
 
+![image two fisheye shots](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/fisheyes_enhanced.png)
+
 
 # Example code
 
