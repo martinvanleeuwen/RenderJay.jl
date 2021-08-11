@@ -53,7 +53,7 @@ And here are two overhead views of the Jarvsilja Pinestand (summer) and Ofenpass
 
 ![image two fisheye shots](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/fisheyes_enhanced.png)
 
-By comparing the amount of radiance scattered into a particular hemispherical direction and comparing this with the amount of radiance that is scattered into that direction by a Lambertian reference target, we can derive the Bidirectional Reflectance Factor (BRF). With RenderJay you can use cyclic boundaries, as is needed for the RAMI exercises, so that any radiation that leaves the scene in a lateral direction, re-enters back in from the opposite side and rays are traced until they leave the scene from the top plane or ceiling that is spanned just above the highest scene element.
+By comparing the amount of radiance scattered into a particular hemispherical direction and comparing this with the amount of radiance that is scattered into that direction by a Lambertian reference target, we can derive the Bidirectional Reflectance Factor (BRF). With RenderJay you can use cyclic boundaries, as is needed for the RAMI exercises, so that any radiation that leaves the scene in a lateral direction, re-enters back in from the opposite side and rays are traced until they leave the scene from the top plane or ceiling that is spanned just above the highest scene element. In the polar plot below, the green dot indicates the position of the sun.
 
 ![image BRF](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/HET28_DIS_D2D_BRF.png)
 
