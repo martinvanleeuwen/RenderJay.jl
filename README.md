@@ -115,7 +115,7 @@ Et voila! You should be seeing something like this.
 
 # Testing
 
-You may run a basic test from the REPL as follows:
+Basic test functionality is included in the test/ folder and may be run from the REPL as follows:
 
 ```
 julia> using Pkg
