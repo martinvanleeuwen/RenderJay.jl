@@ -9,7 +9,7 @@ using Pkg
 Pkg.add("RenderJay")
 ```
 
-At the bottom of this page you will find an example code for rendering. It will produce a top-down view of four Cornell boxes in different colours, floating above a gray flat surface. Already produced renderings can be found in the img/ folder and an overview of the contents of the scene files that are used for rendering can be found in the notes/ folder. A small test, demonstrating basic capacity can be found in the test/ folder.
+At the bottom of this page you will find an example code for rendering. It will produce a top-down view of four Cornell boxes in different colours, floating above a gray flat surface. Already produced renderings can be found in the img/ folder and an overview of the contents of the scene files that are used for rendering can be found in the notes/ folder. A small test, demonstrating basic capacity, can be found in the test/ folder.
 
 # Plant models
 
