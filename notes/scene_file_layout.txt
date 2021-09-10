@@ -1,1 +1,92 @@
+THE RENDERJAY SCENE XML FILE LAYOUT
 
+The following demonstrates the layout of a RenderJay scene file. It shows the different tags and how they are organized. Actual values have mostly been deleted for this purpose.
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<scene>
+	<camera>
+		<eyeX></eyeX>
+		<eyeY></eyeY>
+		<eyeZ></eyeZ>
+		<lookX></lookX>
+		<lookY></lookY>
+		<lookZ></lookZ>
+		<fov></fov>
+		<xResolution></xResolution>
+		<yResolution></yResolution>
+		<nBands></nBands>
+		<rppx></rppx>
+		<nBounces></nBounces>
+	</camera>
+	<sky src=”path_to_file”></sky>
+	<item name="cylinder30" geometry="mesh" src=”path_to_folder”>
+		<shaders>
+			<shader>
+				<name></name>
+				<function></function>
+				<args>
+					<rho></rho>
+					<tau></tau>
+				</args>
+			</shader>
+		</shaders>
+		<transformations>
+			<transform>
+				<matrix>
+					<e11></e11>
+					<e12></e12>
+					<e13></e13>
+					<e14></e14>
+					<e21></e21>
+					<e22></e22>
+					<e23></e23>
+					<e24></e24>
+					<e31></e31>
+					<e32></e32>
+					<e33></e33>
+					<e34></e34>
+				</matrix>
+			</transform>
+		</transformations>
+	</item>
+</scene>
+
+
+The <shader> and <transform> tags may (but do not have to) be contained within <shaders> and <transformations> blocks. Inclusion of such container tags has the advantage that the whole block of subtags can be collapsed and hidden if your XML editor provides an option to expand/collapse XML-tree nodes. Instead of <matrix> you can also use <xRotate>, <yRotate>, <zRotate>, <xScale>, <yScale>, <zScale>, <xOffset>, <yOffset>, <zOffset> to instantiate the object in world space. For a full set of ideas, see the following listing (although one would normally not use a <matrix> tag in combination with the other tags, since a single <matrix> can specify an arbitrary rotation, translation and scaling):
+
+
+    <transformations>
+        <transform>
+            <matrix>
+                <e11>1.0</e11>
+                <e12>0.0</e12>
+                <e13>0.0</e13>
+                <e14>0.0</e14>
+                <e21>0.0</e21>
+                <e22>1.0</e22>
+                <e23>0.0</e23>
+                <e24>0.0</e24>
+                <e31>0.0</e31>
+                <e32>0.0</e32>
+                <e33>1.0</e33>
+                <e34>0.0</e34>
+            </matrix>
+            <xRotate>180.0</xRotate>
+            <yRotate>0.0</yRotate>
+            <zRotate>0.0</zRotate>
+            <xOffset>1.0</xOffset>
+            <yOffset>1.0</yOffset>
+            <zOffset>1.0</zOffset>
+            <xScale>1.0</xScale>
+            <yScale>1.0</yScale>
+            <zScale>1.0</zScale>
+        </transform>
+    </transformations>
+
+
+The use of a transformation matrix has been explained in relation to the Rayshade application, and notes can be found at:
+
+http://graphics.stanford.edu/~cek/rayshade/raynotes/6-transf/transfor.htm
+
+The same method has been adopted in the RAMI-5 parametric scene descriptions.
