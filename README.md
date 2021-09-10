@@ -113,3 +113,13 @@ Et voila! You should be seeing something like this.
 
 ![image Cornell boxes](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/test_little_cornell_boxes_wb_crop.png)
 
+# Testing
+
+You may run a basic test from the REPL as follows:
+
+```
+julia> using Pkg
+julia> ]
+pkg> test RenderJay
+```
+
