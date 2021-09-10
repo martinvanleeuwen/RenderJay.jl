@@ -1,6 +1,6 @@
 # RenderJay.jl
 
-RenderJay is a Julia-based path tracer that is intended for operation on large compute clusters, with applications in ecology and remote sensing where scenes are characterized by very high polygon counts, lots of detail, and light spectra may be broken down into hundreds of wavebands (imaging spectroscopy), but not so much for applications in computer graphics. For example, RenderJay uses no bump maps or textures; everything is down to geometric shaped (i.e., spheres, cylinders, cones, disks and triangle meshes) and bidirectional reflectance (transmittance) distribution functions (BRDFs, BTDFs). Being written in Julia it can profit from Julia's distributed computing capabilities, enabling processing of large workloads across multiple servers.
+RenderJay is a Julia-based path tracer that is intended for operation on workstations and (large) compute clusters, with applications in ecology and remote sensing where scenes are characterized by very high polygon counts, lots of detail, and light spectra may be broken down into hundreds of wavebands (imaging spectroscopy), but applications for this package are not so much sought in computer graphics or architecture, although you could. RenderJay uses no bump maps or textures; everything is down to geometric shaped (i.e., spheres, cylinders, cones, disks and triangle meshes) and bidirectional reflectance (transmittance) distribution functions (BRDFs, BTDFs). Being written in Julia, it can profit from Julia's distributed computing capabilities, enabling processing of large workloads across multiple machines.
 
 RenderJay can be installed as follows from the Julia REPL:
 
@@ -9,18 +9,7 @@ using Pkg
 Pkg.add("RenderJay")
 ```
 
-# Usage
-
-The following is an example code for rendering. It will produce a top-down view of four Cornell boxes in different colours, floating above a gray flat surface. Already produced renderings can be found in the img/ folder. The surface geometry, downwelling irradiance, as well as the scene specification (XML) file with the shaders can all be found in the test/ folder.
-
-The Wytham Woods image is an example rendering that was derived from data that was provided through the RAdiative transfer Model Intercomparison (RAMI) phase-V, that can be found here:
-
-https://rami-benchmark.jrc.ec.europa.eu/_www/phase_descr.php?strPhase=RAMI5
-(feel free to contact Martin van Leeuwen for conversion scripts to Jay format)
-
-
-![image Wytham Woods](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/wytham.png)
-
+At the bottom of this page you will find an example code for rendering. It will produce a top-down view of four Cornell boxes in different colours, floating above a gray flat surface. Already produced renderings can be found in the img/ folder and an overview of the contents of the scene files that are used for rendering can be found in the notes/ folder. A small test, demonstrating basic capacity can be found in the test/ folder.
 
 # Plant models
 
@@ -39,13 +28,20 @@ See this paper (https://doi.org/10.1016/j.rse.2021.112405) for an idea of the ki
 
 # RAMI-5
 
-As part of the RAdiative transfer Model Intercomparison excersize (phase 5), we have prepared RenderJay scene files for the various test cases involved, including abstract scenes, fully parameterized canopies, and (semi-)empirical forest canopies. The illustrations below show raw renderings and no white-balancing has been applied yet, which causes the Wytham Woods scene to appear rather greenish. The irradiance conditions for these example renderings were set to a 10% diffuse sky with a watery sun.
+As part of the RAdiative transfer Model Intercomparison excersize (phase 5), we have prepared RenderJay scene files for the various test cases involved, including abstract scenes, fully parameterized canopies, and (semi-)empirical forest canopies. Some of the illustrations below show raw renderings where no white-balancing has been applied yet, which causes the Wytham Woods scene to appear rather greenish. The irradiance conditions for these example renderings were set to a 10% diffuse sky with a watery sun.
 
 ![image RAMI-5](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/rami5_test.png)
 
 Here is an image showing the downwelling irradiance map that was used for these renderings, with bearing along the horizontal axis and zenith along the vertical:
 
 ![image irradiance map](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/power32_ambient0_diffuse10.png)
+
+After applying white-balancing on the snow of the Wytham Woods scene, for example, we get a realistically looking and pleasing rendering:
+
+https://rami-benchmark.jrc.ec.europa.eu/_www/phase_descr.php?strPhase=RAMI5
+(feel free to contact Martin van Leeuwen to obtain RenderJay scene file for the RAMI5 exercises)
+
+![image Wytham Woods](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/wytham.png)
 
 And here are two overhead views of the Jarvsilja Pinestand (summer) and Ofenpass (winter) scenes. You can clearly see that there is a discontinuity along the bearing of the irradiance map -- which, for the purpose of demonstration, has the benefit that it shows how the irradiance map drapes around the visible sky.
 
