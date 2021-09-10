@@ -28,7 +28,7 @@ See this paper (https://doi.org/10.1016/j.rse.2021.112405) for an idea of the ki
 
 # RAMI-5
 
-As part of the RAdiative transfer Model Intercomparison excersize (phase 5), we have prepared RenderJay scene files for the various test cases involved, including abstract scenes, fully parameterized canopies, and (semi-)empirical forest canopies. Some of the illustrations below show raw renderings where no white-balancing has been applied yet, which causes the Wytham Woods scene to appear rather greenish. The irradiance conditions for these example renderings were set to a 10% diffuse sky with a watery sun.
+As part of the RAdiative transfer Model Intercomparison phase 5 (https://rami-benchmark.jrc.ec.europa.eu/_www/phase_descr.php?strPhase=RAMI5), we have prepared RenderJay scene files for the various test cases involved, including abstract scenes, fully parameterized canopies, and (semi-)empirical forest canopies. Some of the illustrations below show raw renderings where no white-balancing has been applied yet, which causes the Wytham Woods scene to appear rather greenish. The irradiance conditions for these example renderings were set to a 10% diffuse sky with a watery sun.
 
 ![image RAMI-5](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/rami5_test.png)
 
@@ -38,10 +38,9 @@ Here is an image showing the downwelling irradiance map that was used for these 
 
 After applying white-balancing on the snow of the Wytham Woods scene, for example, we get a realistically looking and pleasing rendering:
 
-https://rami-benchmark.jrc.ec.europa.eu/_www/phase_descr.php?strPhase=RAMI5
-(feel free to contact Martin van Leeuwen to obtain RenderJay scene file for the RAMI5 exercises)
-
 ![image Wytham Woods](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/wytham.png)
+
+(feel free to contact Martin van Leeuwen to obtain RenderJay scene file for the RAMI5 exercises)
 
 And here are two overhead views of the Jarvsilja Pinestand (summer) and Ofenpass (winter) scenes. You can clearly see that there is a discontinuity along the bearing of the irradiance map -- which, for the purpose of demonstration, has the benefit that it shows how the irradiance map drapes around the visible sky.
 
