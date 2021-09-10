@@ -89,4 +89,4 @@ The use of a transformation matrix has been explained in relation to the Rayshad
 
 http://graphics.stanford.edu/~cek/rayshade/raynotes/6-transf/transfor.htm
 
-The same method has been adopted in the RAMI-5 parametric scene descriptions.
+The same method has been adopted in the RAMI-5 parametric scene descriptions (https://rami-benchmark.jrc.ec.europa.eu/_www/).
