@@ -21,9 +21,11 @@ A good place to look for plant models is online at various 3D model warehouses. 
 Rendering a 512x512px image of the below Cornell boxes scene took 00:34:04 (HH:MM:SS) on the Dell T7910 (DUAL E5-2630V3) using 30 workers and it took 3:39:20 on a Lenovo Edge 15 laptop (i7-4510U) with only 3 workers. For some very simple scenes with only a few cylinders on a flat surface (not shown) up to a million rays per second were processed using 30 workers.
 
 
-# Application
+# Applications
 
-See this paper (https://doi.org/10.1016/j.rse.2021.112405) for an idea of the kind of cool things that you can do with this module.
+RenderJay can be used to study how different plant compositions or canopy structures affect spectral mixing at a given spatial resolution or viewing geometry. It can be used to derive hemispherical photographs, spectral signatures, and (bi)directional surface reflectance, among other quantities. For a demonstration, this study in the Greater Cape Floristic Region of South Africa uses the RenderJay model to assess the effects of spectral mixing across a range of pixel sizes and species compositions (https://doi.org/10.1016/j.rse.2021.112405).
+
+![image Spectral Mixing](https://github.com/martinvanleeuwen/RenderJay.jl/blob/main/img/GCFR.jpg)
 
 
 # RAMI-5
